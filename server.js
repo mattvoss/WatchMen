@@ -84,6 +84,7 @@ watchmen.start();
 // Error handling
 //----------------------------------------------------
 process.on('uncaughtException', function(err) {
+  var test = err;
   console.error('uncaughtException:');
   console.error(err);
 });
