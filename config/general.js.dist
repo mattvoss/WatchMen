@@ -8,6 +8,15 @@ module.exports = {
       api_key : 'your-postmark-key-here'
     }
   },
+  nodemailer: { //See https://github.com/andris9/Nodemailer
+    smtp: {
+      service: "Gmail",
+      auth: {
+        user: "user@gmail.com",
+        pass: "password"
+      }
+    }
+  }
 
   remove_events_older_than_seconds : 60 * 60 * 24 * 10, // 10 days default configuration
 };
